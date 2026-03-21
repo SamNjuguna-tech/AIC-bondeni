@@ -1,0 +1,206 @@
+body {
+    font-size: .875rem;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #343a40;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .nav-link i {
+    margin-right: 0.5rem;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+
+main {
+    padding-top: 48px;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table > :not(caption) > * > * {
+    padding: 0.75rem;
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        padding-top: 0;
+        background-color: #343a40;
+    }
+    
+    main {
+        padding-top: 0;
+    }
+    
+    .navbar-brand {
+        padding-left: 1rem;
+    }
+}
+
+
+/* left nav bar */
+.stat-card {
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+}
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.stat-card.members { border-left-color: #4e73df; }
+.stat-card.prayers { border-left-color: #1cc88a; }
+.stat-card.sermons { border-left-color: #36b9cc; }
+.stat-card.ministries { border-left-color: #f6c23e; }
+.stat-card.requests { border-left-color: #e74a3b; }
+
+.sidebar {
+    background-color: #343a40;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+.sidebar .nav-link {
+    color: rgba(255,255,255,.75);
+    border-radius: 0.25rem;
+    margin: 0.25rem 0;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    color: white;
+    background-color: rgba(255,255,255,.1);
+}
+.sidebar .nav-link.active {
+    font-weight: 600;
+}
+
+.activity-item {
+    border-left: 3px solid #dee2e6;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.activity-item:hover {
+    border-left-color: #4e73df;
+}
+
+.admin-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.sidebar-toggler {
+    display: none;
+    /* position: fixed; */
+
+    /* border: none; */
+    border-top-right-radius: 10% !important;
+    border-bottom-right-radius: 10% !important;
+    /* width: 40px;
+    height: 40px; */
+    font-size: 1.2rem;
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        z-index: 1040;
+        transform: translateX(-100%);
+    }
+    
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    
+    .sidebar-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1039;
+        display: none;
+    }
+    
+    .sidebar-backdrop.show {
+        display: block;
+    }
+    
+    main {
+        margin-left: 0 !important;
+    }
+
+    #button_logout{
+        display: none;
+    }
+    .sidebar-toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Tab navigation */
+.nav-tabs .nav-link {
+    color: #495057;
+    font-weight: 500;
+}
+.nav-tabs .nav-link.active {
+    font-weight: 600;
+}
+.tab-content {
+    padding: 20px 0;
+}
