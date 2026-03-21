@@ -1,2 +1,2 @@
 # AIC-bondeni
-the Aic bondeni main website
+The Aic bondeni main website
