@@ -1,5 +1,5 @@
 # AIC Bondeni Official Website
-This repository contains the source code for the AIC Bondeni church website (aicbondeni.co.ke). 
+This repository contains the source code for the AIC Bondeni church website. 
 The platform serves as the digital front door for our congregation, extending our mission, evangelism, worship, and discipleship goals into the digital space.
 
 ## Purpose and MotiveThe primary objective of this project is to increase the church's visibility and outreach beyond the physical congregation. 
