@@ -20,6 +20,9 @@ const navLinks = [
   { name: "Sermons", href: "/sermons", icon: BookOpen },
   { name: "Events", href: "/events", icon: Calendar },
   { name: "Contact", href: "/contact", icon: Mail },
+  { name: "Pastors", href: "/pastors", icon: Mail },
+  { name: "Ministries", href: "/ministries", icon: Mail },
+  
 ];
 
 export default function Navbar() {
