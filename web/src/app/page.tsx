@@ -4,6 +4,7 @@ export default function Home() {
       <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground animate-in fade-in zoom-in duration-700">
         Home
       </h1>
+    
     </div>
   );
 }
